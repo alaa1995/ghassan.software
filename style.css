@@ -514,3 +514,76 @@ margin:10px;
 }
 
 }
+/* Animation */
+
+.card,
+.project,
+.hero-text,
+.hero-image,
+.numbers div{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* زر الأعلى */
+
+#topBtn{
+position:fixed;
+bottom:95px;
+left:25px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#00BCD4;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+z-index:999;
+}
+
+/* زر الوضع الليلي */
+
+#darkBtn{
+position:fixed;
+bottom:160px;
+left:25px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#E91E63;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+z-index:999;
+}
+
+/* الوضع الليلي */
+
+body.dark{
+background:#111827;
+color:#fff;
+}
+
+body.dark .card,
+body.dark form input,
+body.dark form textarea{
+background:#1f2937;
+color:#fff;
+border-color:#374151;
+}
+
+body.dark section h2,
+body.dark .logo{
+color:#00BCD4;
+}
