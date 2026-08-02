@@ -1,0 +1,516 @@
+/* ===========================
+   Ghassan Software
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cairo',sans-serif;
+    background:#f7f9fc;
+    color:#222;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0f172a;
+    z-index:999;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
+
+.logo{
+    color:#00BCD4;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-right:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#00BCD4;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:170px 0 100px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:30px;
+    color:#ddd;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:500px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn,
+.btn2{
+
+display:inline-block;
+
+padding:14px 35px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+margin-left:10px;
+
+transition:.3s;
+
+font-weight:bold;
+
+}
+
+.btn{
+
+background:#00BCD4;
+
+color:white;
+
+}
+
+.btn:hover{
+
+background:#0097A7;
+
+transform:translateY(-3px);
+
+}
+
+.btn2{
+
+background:#E91E63;
+
+color:white;
+
+}
+
+.btn2:hover{
+
+background:#C2185B;
+
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+
+padding:80px 0;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:50px;
+
+color:#0f172a;
+
+}
+
+/* ================= SERVICES ================= */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.4s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:45px;
+
+color:#00BCD4;
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+/* ================= ABOUT ================= */
+
+#about{
+
+background:white;
+
+text-align:center;
+
+}
+
+#about p{
+
+font-size:20px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+/* ================= PORTFOLIO ================= */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:20px;
+
+}
+
+.project{
+
+overflow:hidden;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.project img{
+
+width:100%;
+
+display:block;
+
+transition:.5s;
+
+}
+
+.project:hover img{
+
+transform:scale(1.1);
+
+}
+
+/* ================= COUNTER ================= */
+
+.counter{
+
+background:#00BCD4;
+
+color:white;
+
+}
+
+.numbers{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+text-align:center;
+
+gap:30px;
+
+}
+
+.numbers h2{
+
+font-size:50px;
+
+margin-bottom:10px;
+
+color:white;
+
+}
+
+/* ================= CONTACT ================= */
+
+form{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+form input,
+
+form textarea{
+
+padding:15px;
+
+margin-bottom:20px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:17px;
+
+font-family:Cairo;
+
+}
+
+form input:focus,
+
+form textarea:focus{
+
+outline:none;
+
+border-color:#00BCD4;
+
+}
+
+form button{
+
+padding:15px;
+
+background:#00BCD4;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+form button:hover{
+
+background:#0097A7;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:50px 0;
+
+text-align:center;
+
+}
+
+.social{
+
+margin:20px 0;
+
+}
+
+.social a{
+
+display:inline-block;
+
+margin:0 10px;
+
+font-size:24px;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.social a:hover{
+
+color:#00BCD4;
+
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+left:25px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+font-size:32px;
+
+text-decoration:none;
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.hero-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+}
+
+nav ul{
+
+margin-top:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+nav ul li{
+
+margin:10px;
+
+}
+
+}
